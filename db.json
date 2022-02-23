@@ -1,0 +1,63 @@
+{
+  "PC_Stats": [
+    {
+      "name": "Testy McFighter",
+      "AC": "15",
+      "HP": "13",
+      "STR_mod": "3",
+      "DEX_mod": "1"
+    },
+    {
+      "name": "khkjhkj",
+      "AC": "2",
+      "HP": "2",
+      "STR_mod": "2",
+      "DEX_mod": "2",
+      "id": "name"
+    }
+  ],
+  "NPC_Monst": [
+    {
+      "name": "Bandit1",
+      "AC": "12",
+      "HP": "11",
+      "STR_mod": "0",
+      "DEX_mod": "+1"
+    },
+    {
+      "name": "Bandit2",
+      "AC": "12",
+      "HP": "11",
+      "STR_mod": "+0",
+      "DEX_mod": "+1"
+    },
+    {
+      "name": "Bandit Captain",
+      "AC": "15",
+      "HP": "65",
+      "STR_mod": "2",
+      "DEX_mod": "3"
+    },
+    {
+      "name": "Goblin1",
+      "AC": "15",
+      "HP": "7",
+      "STR_mod": "-1",
+      "DEX_mod": "2"
+    },
+    {
+      "name": "Goblin2",
+      "AC": "15",
+      "HP": "7",
+      "STR_mod": "-1",
+      "DEX_mod": "2"
+    },
+    {
+      "name": "Goblin3",
+      "AC": "15",
+      "HP": "7",
+      "STR_mod": "-1",
+      "DEX_mod": "2"
+    }
+  ]
+}
