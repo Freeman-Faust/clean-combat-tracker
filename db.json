@@ -22,14 +22,14 @@
       "AC": "12",
       "HP": "11",
       "STR_mod": "0",
-      "DEX_mod": "+1"
+      "DEX_mod": "1"
     },
     {
       "name": "Bandit2",
       "AC": "12",
       "HP": "11",
-      "STR_mod": "+0",
-      "DEX_mod": "+1"
+      "STR_mod": "0",
+      "DEX_mod": "1"
     },
     {
       "name": "Bandit Captain",

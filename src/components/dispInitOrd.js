@@ -3,38 +3,40 @@ import InitOrd from './initOrd';
 
 function DispInitOrd(props)
 {
+    function calcInt(min, max) 
+    {   
+       let resultVar = Math.floor(Math.random()*(max-min+1));
+       return(resultVar);
+    }
 
     function calcDetInt(dex)
     {
-        return(parseInt(dex) + 22);
+        return(dex + calcInt(1,20));
         //todo: make the actual calculation
-        //Math.floor(Math.random()*(max-min+1))+parseInt(dex)
+        
     }
     
     const initList = [];
-    for(const comb in props.comb)
+   
+    for(const comb of props.comb)
     {
         let tmpObj = {};
         tmpObj.name = comb.name;
-        tmpObj.detInt = calcDetInt(comb.dex);
+        tmpObj.detInt = calcDetInt(parseInt(comb.DEX_mod));
         initList.push(tmpObj);
     }
 
-    console.log(initList);
+    console.dir(initList);
 
-    const sortedInitList = initList.sort((a,b) => a.detInt - b.detInt); // do some work to sort this by detInt 
+    const sortedInitList = initList.sort((a,b) => b.detInt - a.detInt); 
         
     console.log(sortedInitList);
-        
-        
-
-
    
 return(
     <div id="dispInit">
-        <button onClick={handleClick}>Calculate Initiative</button>
+        {/* <button onClick={}>Calculate Initiative</button> */}
         <div>
-        {props.sortedInitList.map(sortedComb=>{
+        {sortedInitList.map(sortedComb=>{
             return(<InitOrd sortedComb={sortedComb}/>)
         })}
         </div>
