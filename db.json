@@ -14,6 +14,14 @@
       "STR_mod": "2",
       "DEX_mod": "2",
       "id": "name"
+    },
+    {
+      "charName": "sdflkj",
+      "AC": "12",
+      "HP": "14",
+      "STR_mod": "1",
+      "DEX_mod": "-1",
+      "id": "charName"
     }
   ],
   "NPC_Monst": [
