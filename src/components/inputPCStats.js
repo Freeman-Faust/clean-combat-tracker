@@ -24,7 +24,7 @@ const onStatsSubmit = (event)=>
         <div className="pcStats">
             <form id="statsInput" onSubmit={onStatsSubmit}>
                <description>Name: </description> 
-               <input name="charName" type="text"></input> 
+               <input name="name" type="text"></input> 
                <description>AC: </description>
                <input name="AC" type="number"></input> 
                <description>HP: </description>
@@ -33,7 +33,7 @@ const onStatsSubmit = (event)=>
                <input name="STR_mod" type="number"></input> 
                <description>Dex Modifier: </description> 
                <input name="DEX_mod" type="number"></input> 
-               <input name="id" hidden value="charName"></input>
+               <input name="id" hidden value={props.name}></input>
                <button>Submit</button>
             </form>
         </div>

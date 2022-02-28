@@ -22,6 +22,14 @@
       "STR_mod": "1",
       "DEX_mod": "-1",
       "id": "charName"
+    },
+    {
+      "name": "lzxckjxXLKZJCLZKJXC",
+      "AC": "12",
+      "HP": "13",
+      "STR_mod": "2",
+      "DEX_mod": "-1",
+      "id": "GLCXMnE"
     }
   ],
   "NPC_Monst": [
