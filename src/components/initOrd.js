@@ -6,8 +6,7 @@ const InitOrd = function(props)
 {
     return(
         <div className="initOrd">
-        <header>Initiative Order</header>
-             <div>{props.sortedComb.name}</div>
+        <header>{props.sortedComb.name}</header>
              <div>{props.sortedComb.detInt}</div>
             </div>
     )

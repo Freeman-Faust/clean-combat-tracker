@@ -15,17 +15,17 @@ const [comb,setComb] = useState([{}]);
 
 useEffect(()=>
 {
-fetch('http://localhost:3001/db').then(x=>x.json()).then(x=>setData(x.NPC_Monst))
+fetch('http://localhost:3000/db').then(x=>x.json()).then(x=>setData(x.NPC_Monst))
 },[]);
 
 useEffect(()=>
 {
-fetch('http://localhost:3001/db').then(x=>x.json()).then(x=>setData2(x.PC_Stats))
+fetch('http://localhost:3000/db').then(x=>x.json()).then(x=>setData2(x.PC_Stats))
 },[]);
 
 useEffect(()=>
 {
-fetch('http://localhost:3001/db').then(x=>x.json()).then(x=>setComb([...x.PC_Stats, ...x.NPC_Monst]))
+fetch('http://localhost:3000/db').then(x=>x.json()).then(x=>setComb([...x.PC_Stats, ...x.NPC_Monst]))
 },[]);
 
 //setComb([x.PC_Stats, x.NPC_Monst])

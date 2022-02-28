@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+body { 
+	margin: 0; 
+	padding: 0; 
+	background: blanchedalmond; 
+	font: normal .7em Tahoma, Verdana, Arial, Helvetica, Sans-Serif; 
+	line-height: 1.6em; 
+	color: #333; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.App-header { font: bold 2em "Trebuchet MS", Helvetica, Sans-Serif; margin: 0; color: black; background-color:transparent; }
+
+/* CONTENT WRAPPER */
+
+#App { 
+	width: 900px; 
+	margin: 25px auto 0 auto; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* LEFT INTRO SIDE */	
+
+#pcStats {
+	clear: left;
+	float: left;
+	width: 250px;
+	background: gray;
+	color: white;
+	margin: 0 0 1px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* RIGHT INTRO SIDE */
+	
+#dispInit {
+	float: right;
+	width: 340px;
+	padding: 25px 280px 0 20px;
+	background: tan;
+	color: teal;
+	margin: 0 0 6px 0;
+	border: 2px solid #e2e2e2;
+}
+	
+/* LEFT SIDE */
+	
+#pcData {
+	float: left;
+	width: 250px;
+		padding: 4px 15px;
+		border: 1px solid #ccc;
+		margin: 0 0 10px 0;
+	}
+	
+
+/* RIGHT SIDE */
+
+#npcData {
+	float: right;
+	width: 643px;
+		border:#ccc 1px solid;
+		text-align: justify;
+		margin: 0 0 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* FOOTER */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+#diceRoller { clear: both; padding: 5px; border-top: 1px solid #ccc; }
