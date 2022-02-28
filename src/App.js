@@ -6,6 +6,7 @@ import LoadNPCStats from './components/loadNPCStats';
 import LoadPCStats from './components/loadPCStats';
 import InputPCStats from './components/inputPCStats';
 import DispInitOrd from './components/dispInitOrd';
+import CheckBox from './components/checkBox';
 
 function App() {
 
@@ -28,7 +29,7 @@ useEffect(()=>
 fetch('http://localhost:3000/db').then(x=>x.json()).then(x=>setComb([...x.PC_Stats, ...x.NPC_Monst]))
 },[]);
 
-//setComb([x.PC_Stats, x.NPC_Monst])
+
   return (
     <div className="App">
       <header className="App-header"> 
@@ -36,8 +37,9 @@ fetch('http://localhost:3000/db').then(x=>x.json()).then(x=>setComb([...x.PC_Sta
       </header>
       <LoadNPCStats npc={data}/>
       <LoadPCStats pc={data2}/>
-      <DiceRoll/>
+      <CheckBox/>
       <InputPCStats/>
+      <DiceRoll/>
       <DispInitOrd comb={comb}/>
     </div>
   );

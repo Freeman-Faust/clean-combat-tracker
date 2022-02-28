@@ -34,6 +34,7 @@ function DispInitOrd(props)
    
 return(
     <div id="dispInit">
+        <header>Initiative Order</header>
         {/* <button onClick={}>Calculate Initiative</button> */}
         <div>
         {sortedInitList.map(sortedComb=>{
